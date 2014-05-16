@@ -56,7 +56,7 @@ Installation
     $ brew install https://raw.github.com/fengsp/lookup/master/lookup.rb
 
     # Download the zipball and install it
-    $ wget https://github.com/fengsp/lookup/zipball/master#egg=lookup
+    $ wget https://github.com/fengsp/lookup/archive/master.zip
     $ python setup.py install
 
 Better
