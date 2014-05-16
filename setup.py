@@ -27,6 +27,15 @@ setup(
     py_modules=['lookup'],
     zip_safe=False,
     platforms='any',
+    entry_points={
+        'console_scripts': [
+            'lookup = lookup:command_line',
+        ]
+    },
+    install_requires=[
+        'pyquery',
+        'requests'
+    ],
     classifiers=[
         'Environment :: Console',
         'Intended Audience :: Developers',
