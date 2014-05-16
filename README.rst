@@ -9,11 +9,8 @@ lookup
   ||||   $ lookup         :   Difficult        ||||
   ||||                    :   circumstances    ||||
   ||||                    :   serve as a       ||||
-  ||||                    :   textbook of      ||||
-  ||||                    :   life for people. ||||
-  ||||                    :                    ||||
-  ||||                    :   Nothing seek,    ||||
-  ||||                    :   nothing find.    ||||
+  ||||   Nothing seek,    :   textbook of      ||||
+  ||||   nothing find.    :   life for people. ||||
   ||||                    :                    ||||
   ||||                    :           @fengsp  ||||
   ||||___________________ : ___________________||||
