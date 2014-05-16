@@ -51,10 +51,10 @@ Installation
 ::
 
     $ pip install lookup
-    
+    or
     # Use Mac OS X brew
     $ brew install https://raw.github.com/fengsp/lookup/master/lookup.rb
-
+    or
     # Download the zipball and install it
     $ wget https://github.com/fengsp/lookup/archive/master.zip
     $ python setup.py install
