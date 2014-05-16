@@ -9,7 +9,7 @@ Links
 
 * `documentation <https://github.com/fengsp/lookup>`_
 * `development version
-  <http://github.com/fengsp/lookup/zipball/master#egg=pypages-dev>`_
+  <http://github.com/fengsp/lookup/zipball/master#egg=lookup-dev>`_
 
 """
 from setuptools import setup
