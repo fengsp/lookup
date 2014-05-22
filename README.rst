@@ -59,6 +59,13 @@ Installation
     $ wget https://github.com/fengsp/lookup/archive/master.zip
     $ python setup.py install
 
+.. note::
+   
+   There is known issue that homebrew might run into error.
+   Try use the following command to fix it::
+
+       $ sudo chmod -R go+w /Library/Python/2.7/site-packages/
+
 Better
 ------
 
