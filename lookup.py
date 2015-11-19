@@ -6,7 +6,7 @@
 
     Look up words via the command line.
 
-    :copyright: (c) 2014 by Shipeng Feng.
+    :copyright: (c) 2015 by Shipeng Feng.
     :license: BSD, see LICENSE for more details.
 """
 import sys
@@ -55,12 +55,25 @@ def get_result(url):
 
 def get_output(word):
     result = get_result(SEARCH_URL.format(url_quote(word)))
-    html = pq(result)
-    return html('.net_paraphrase:first .clear:first')
+    p = pq(result)
+    info = p('.info-article.info-base')
+    word_list = info('.base-list')
+    elements = word_list('li').not_('.change')
+    output = []
+    for element in elements:
+        prop = pq(element)('.prop').text()
+        content = pq(element)('p').text()
+        output.append((prop, content))
+    return output
 
 
 def format_output(output):
-    return output.text()
+    formated = []
+    for prop, content in output:
+        prop = prop.strip()
+        content = content.strip().replace(' ', '')
+        formated.append(u'{0:5}  {1}'.format(prop, content))
+    return u'\n'.join(formated)
 
 
 def lookup(word):
