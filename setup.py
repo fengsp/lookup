@@ -17,7 +17,7 @@ from setuptools import setup
 
 setup(
     name='lookup',
-    version='0.1',
+    version='0.2',
     url='https://github.com/fengsp/lookup',
     license='BSD',
     author='Shipeng Feng',
